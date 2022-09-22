@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal{
+    display: flex;
+    margin-left: 15px;  
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.principal button{
+    margin-top: 25px;
+    margin-left: 120px;
+    width: 180px;
+    height: 50px;
+    background-color: #27AE60;
+    border: thin;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.principal img{
+    width: 450px;
+}
+
+.palavra{
+    margin-top: 380px;
+    margin-left: 40px;
+    display: flex;
+    width: 300px;
+}
+
+.letra{
+    margin-right: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.letra-escondida{
+    margin-right: 10px;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.letras{
+    width: 587px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bloco-letra{
+    width: 40px;
+    height: 40px;
+    border:solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #E1ECF4;
+    color: #417DAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.selecionado{
+    background-color: #9FAAB5;
+    color: #7C828A;
+}
+
+.chutar{
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chutar input{
+width: 300px;
+height: 25px;
+border-radius: 5px;
+margin-left: 10px;
+margin-right: 20px;
+}
+
+.chutar button{
+    width: 75px;
+    height: 35px;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #E1ECF4;
+    color: #417DAA;
+    font-size: 16px;
+}
+
+button{
+    cursor: pointer;
+}
