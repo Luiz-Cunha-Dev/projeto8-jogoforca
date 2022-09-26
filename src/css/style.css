@@ -5,13 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2%;
 }
 
 .principal{
     display: flex;
     margin-left: 15px;  
     margin-top: 20px;
-    width: 100%;
     justify-content: center;
 }
 
@@ -95,7 +95,7 @@ margin-left: 10px;
 margin-right: 20px;
 }
 
-.chutar button{
+.botao-chutar{
     width: 75px;
     height: 35px;
     border: solid;
@@ -108,6 +108,96 @@ margin-right: 20px;
     font-size: 16px;
 }
 
+.botao-selecionado{
+    width: 75px;
+    height: 35px;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #9FAAB5;
+    color: #7C828A;
+    font-size: 16px;
+}
+
 button{
     cursor: pointer;
+}
+
+.vermelho{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+@media (max-width: 800px){
+    .principal img{
+        width: 300px;
+        
+    }
+    .palavra{
+        margin-top: 200px;
+        margin-left: 50px;
+    }
+}
+@media (max-width: 614px){
+
+    .container{
+        padding-left: 50%;
+    }
+
+    .principal img{
+        width: 200px;
+    }
+
+    .principal button{
+        margin-top: 10px;
+        margin-left: 30%;
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+
+    }
+    
+    .palavra{
+        margin-top: 45%;
+        margin-left: 15%;
+    }
+
+    .letra{
+        margin-right: 5px;
+        font-size: 25px;
+    }
+
+    .letras{
+        width: 350px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .bloco-letra{
+        width: 50px;
+        height: 50px;
+    }
+
+    .chutar{
+        margin-top: 25px;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chutar input{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
 }
