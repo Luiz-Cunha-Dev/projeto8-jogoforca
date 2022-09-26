@@ -10,10 +10,6 @@ import forca6 from "./img/forca6.png";
 import palavras from "./palavras";
 
 
-<<<<<<< HEAD
-=======
-const letras = ["A", "B", "C","D", "E", "F","G", "H", "I","J", "K", "L","M", "N", "O","P", "Q", "R","S", "T", "U","V", "W", "X","Y", "Z"];
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
 
 export default function App(){
 
@@ -21,13 +17,10 @@ export default function App(){
     const [letrasPalavraSorteada, setletrasPalavraSorteada]= useState([]);
     const [selecionadas, setSelecionadas] = useState([]);
     const [letrasRestantes, setLetrasRestantes] = useState([]);
-<<<<<<< HEAD
     const [contadorErros, setContadorErros] = useState(0);
     const [contadorAcertos, setContadorAcertos] = useState(0);
     const [palavraChute, setPalavraChute] = useState("");
     const imagens = [forca0, forca1, forca2, forca3, forca4, forca5, forca6]
-=======
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
 
 
     function sortearPalavra(array){
@@ -44,33 +37,22 @@ export default function App(){
         setletrasPalavraSorteada(letrasPalavra);
         setSelecionadas([]);
         setLetrasRestantes(arrayDetraços);
-<<<<<<< HEAD
         setContadorAcertos(0);
         setContadorErros(0);
         setPalavraChute("");
-=======
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
     }
 
 
     function selecionarLetra(index){
-<<<<<<< HEAD
         if(!selecionadas.includes(index) && letrasRestantes.length !== 0){
             let novaArray = [...selecionadas, index];
             setSelecionadas(novaArray)
-=======
-        if(!selecionadas.includes(index)){
-            let novaArray = [...selecionadas, index];
-            setSelecionadas(novaArray)
-            console.log(novaArray);
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
             mostraLetra(letras[index])
         }
 
     }
 
     function mostraLetra(letra){
-<<<<<<< HEAD
         let letrasAcertadas = [...letrasRestantes];
         let contadorDeAcertos = 0;
         let contadorDeErros = -1*(letrasPalavraSorteada.length);
@@ -127,23 +109,12 @@ export default function App(){
         }
 
 }
-=======
-        let letrasAcertadas = [...letrasRestantes]
-        for(let i = 0; i < letrasPalavraSorteada.length; i++){
-            if(letra.toLowerCase() === letrasPalavraSorteada[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "")){
-                letrasAcertadas[i] = letrasPalavraSorteada[i];
-                setLetrasRestantes(letrasAcertadas)
-            }
-        }
-        
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
     }
 
 
     return(
         <div className="container">
         <div className="principal">
-<<<<<<< HEAD
             <img data-identifier={`game-image`} src={imagens[contadorErros]} />    
             <div className="direita">
                 <button data-identifier="choose-word" onClick={() => sortearPalavra(palavras)}>Escolher Palavra</button>
@@ -151,19 +122,11 @@ export default function App(){
                 ${(contadorErros === 6) ? "vermelho" : ""}
                  ${(contadorAcertos === letrasPalavraSorteada.length) ? "verde" : ""}`}>
                     {(contadorErros === 6 ? letrasPalavraSorteada : letrasRestantes).map((l, index) => <div data-identifier={`word`} key={index} className="letra">{l}</div> )}
-=======
-            <img src={forca0} />    
-            <div className="direita">
-                <button onClick={() => sortearPalavra(palavras)}>Escolher Palavra</button>
-                <div className="palavra">
-                    {letrasRestantes.map((l, index) => <div key={index} className="letra">{l}</div> )}
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
         
                 </div>
             </div>
         </div>
         <div className="letras">
-<<<<<<< HEAD
             {letras.map((l, index) => <div  data-identifier={`letter`} key={index}  onClick={() => selecionarLetra(index)}
              className={`bloco-letra 
              ${selecionadas.includes(index) ? "selecionado" : "" }
@@ -186,16 +149,6 @@ export default function App(){
              ${contadorAcertos === letrasPalavraSorteada.length ? "botao-selecionado" : "botao-chutar"}
              `}
               onClick={chutarPalavra}>Chutar</button>
-=======
-            {letras.map((l, index) => <div key={index} onClick={() => selecionarLetra(index)}
-             className={`bloco-letra ${selecionadas.includes(index) ? "selecionado" : "" }`}
-            >{l}</div>)}
-        </div>
-        <div className="chutar">
-            <span>Já sei a palavra!</span>
-            <input type="text"/>
-            <button>Chutar</button>
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
         </div>
         </div>
     )

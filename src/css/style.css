@@ -5,20 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     padding: 2%;
-=======
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
 }
 
 .principal{
     display: flex;
     margin-left: 15px;  
     margin-top: 20px;
-<<<<<<< HEAD
-=======
-    width: 100%;
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
     justify-content: center;
 }
 
@@ -102,11 +95,7 @@ margin-left: 10px;
 margin-right: 20px;
 }
 
-<<<<<<< HEAD
 .botao-chutar{
-=======
-.chutar button{
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
     width: 75px;
     height: 35px;
     border: solid;
@@ -119,7 +108,6 @@ margin-right: 20px;
     font-size: 16px;
 }
 
-<<<<<<< HEAD
 .botao-selecionado{
     width: 75px;
     height: 35px;
@@ -212,8 +200,4 @@ button{
         margin-top: 10px;
         margin-bottom: 10px;
         }
-=======
-button{
-    cursor: pointer;
->>>>>>> 08256ea159c31114e6d3ea8a7d7b641945e6e9ef
 }
